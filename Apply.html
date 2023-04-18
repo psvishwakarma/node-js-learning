@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="admin.js"></script>
+</head>
+<body>
+    <h2>Employee Apply From</h2>
+    <form id="formid">
+        <label >Employee Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label >Add:</label>
+        <input type="text" id="Add" name="Add">
+        <label >Date:</label>
+        <input type="date" id="date" name="date"><br><br>
+        <input type="button"  id="Submit" onclick="submitdata()" value="send"></input>
+      </form>
+      <!-- <script>
+         function submitdata(){
+            var name=$('#name').val();
+            var Add=$('#Add').val();
+            var date=$('#date').val();
+         
+         jsonobject={
+            "name":"",
+            "Add":"",
+            "date":""
+
+         }
+         jsonobject.name=name;
+         jsonobject.Add=Add;
+         jsonobject.date=date;
+         var str=JSON.stringify(jsonobject);
+         console.log(str);
+         document.write(str);
+        }
+      </script> -->
+</body>
+</html>
